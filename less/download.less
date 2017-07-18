@@ -1,0 +1,168 @@
+@px_r: 		0.07143rem;
+@px_e: 		0.07143em;
+
+img {
+	vertical-align: middle;
+}
+
+.downlaod-head {
+	background-image: url(http://localhost/toloka-ui/images/american-gods-poster-premiere-no-date_hor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: pos_animation 100s infinite;
+	// margin-bottom: 5rem;
+	.download-inner {
+		background-color: rgba(9, 16, 33, 0.41);
+		// padding-top: 5.714rem;
+		&> .heade {
+			padding-top: 5.714rem;
+		}
+	}
+	.poster {
+		position: relative;
+		.poster-inner {
+			position: absolute;
+			background-color: #fff;
+			box-shadow: 0 0 0.5rem 0.0625rem rgba(0, 0, 0, 0.5);
+			img {
+				width: 100%;
+				padding: 0.1429rem;
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+	.inform {
+		.breadcrumb {
+			font-size: 0.8571em;
+			font-weight: bold;
+			text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+			a {
+				color: #fff;
+			}
+			i {
+				color: #bfbfbf;
+			}
+		}
+		.post-name {
+			font-size: 1.714em;
+			color: #fff;
+			text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+		}
+		.bt_attached {
+			font-size: 2.571em;
+			line-height: 1.4;
+			padding: 1.571em 0;
+			color: #fff;
+			text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+			a {
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+		.sharing {
+			padding: 1rem 0;
+			a {
+				color: #fff;
+				transition: .3s;
+				text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+				padding: 0 .3em;
+				&:hover {
+					color: #dfdfdf;
+				}
+			}
+		}
+	}
+	.bottom {
+		background-color: rgba(0, 0, 0, 0.8);
+		.statistics {
+			.statistic {
+				margin-bottom: 0;
+				text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.29);
+				.value {
+					font-size: 2.429em !important;
+				}
+				.label {
+					font-size: 0.8571em !important;
+				}
+				&.red {
+					.label {
+						color: #DB2828;
+					}
+				}
+				&.green {
+					.label {
+						color: #21BA45;
+					}
+				}
+				&.grey {
+					.label {
+						color: #767676;
+					}
+				}
+			}
+		}
+		.bt_statistic {
+			float: left;
+		}
+		.bt_check {
+			color: #21BA45;
+			float: right;
+			padding-top: .5em;
+			line-height: 1.2;
+			font-size: 22px;
+		}
+	}
+}
+.thanks-container {
+	margin: 0.8571rem 0;
+	.tag-list {
+		display: inline-block;
+	}
+}
+
+.download-content {
+	margin-top: 3rem;
+	img {
+		max-width: 39.29rem;
+	}
+	article {
+		border: @px_e solid rgba(0, 0, 0, 0.26);
+		border-radius: @px_r*3;
+		box-shadow: 0 0 0.5rem 0.0625rem rgba(0, 0, 0, 0.32);
+		padding: 1rem;
+	}
+}
+
+
+
+.code {
+	font-family: Courier,'Courier New',sans-serif;
+	font-size: 11px;
+	color: #006600;
+	background-color: #FAFAFA;
+	border: #D1D7DC;
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+}
+
+
+
+
+
+
+
+
+///----------- АНІМАЦІЇ ---------------//////
+
+@keyframes pos_animation {
+  0%, 100% {
+    background-position-y: 27%;
+  }
+  50% {
+    background-position-y: 70%;
+  }
+}
