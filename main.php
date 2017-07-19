@@ -11,6 +11,7 @@
 		<script src="js/scripts.js"></script>
 		<link rel="stylesheet" href="css/semantic.css">
 		<link rel="stylesheet" href="css/fontello.css">
+		<link rel="stylesheet" href="//fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	</head>
 <body>
 	<main>
@@ -41,66 +42,64 @@
 										<i class="right icon-right-big icon divider"></i>
 										<a href="" class="active section">Серіали в HD</a>
 									</div>
-									<div class="post-name">
-										Американські боги / American Gods (2017) WEBRip 1080p
-									</div>
+									<div class="post-name">Американські боги / American Gods (2017) WEBRip 1080p</div>
 									<div class="bt_attached">
-										<span title="Рейтинг">
+										<div title="Рейтинг">
 											7.7
-										</span>
-										<span>
+										</div>
+										<div>
 											<a href="" title="Оцінити">
 												<i class="icon-star-empty"></i>
 											</a>
-										</span>
-										<span>
+										</div>
+										<div>
 											<a href="" title="Завантажити torrent файл">
 												<i class="icon-download"></i>
 											</a>
-										</span>
-										<span>
+										</div>
+										<div>
 											<a href="" title="Magnet посилання">
 												<i class="icon-magnet"></i>
 											</a>
-										</span>
+										</div>
 									</div>
 									<div class="sharing">
-										<span class="share-btn">
+										<div class="share-btn">
 											<a href="" title="Якщо! Dropdown з соціальними мережами. Або без dropdown">
 												<i class="icon-share"></i>
 											</a>
-										</span>
-										<span class="share-facebook">
+										</div>
+										<div class="share-facebook">
 											<a href="" title="">
 												<i class="icon-facebook"></i>
 											</a>
-										</span>
-										<span class="share-gplus">
+										</div>
+										<div class="share-gplus">
 											<a href="" title="">
 												<i class="icon-gplus"></i>
 											</a>
-										</span>
-										<span class="share-twitter">
+										</div>
+										<div class="share-twitter">
 											<a href="Поділитися">
 												<i class="icon-twitter"></i>
 											</a>
-										</span>
-										<span class="rss">
+										</div>
+										<div class="rss">
 											<a title="RSS"href="">
 												<i class="icon-rss-1"></i>
 											</a>
-										</span>
+										</div>
 
-										<span class="favorite">
+										<div class="favorite">
 											<a title="Стежити" href="">
 												<i class="icon-heart"></i>
 											</a>
-										</span>
-										<span class="watched">
+										</div>
+										<div class="watched">
 											<a title="Переглянуте" href="">
 												<i class="icon-eye"></i>
 											</a>
-										</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -145,7 +144,7 @@
 									</div>
 								</div>
 								<div class="bt_check">
-									<span><i class="icon-ok-circle"></i>Перевірено</span>
+									<div class="check"><i class="icon-ok-circle"></i>Перевірено</div>
 								</div>
 							</div>
 						</div>

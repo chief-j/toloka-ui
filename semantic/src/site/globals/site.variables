@@ -1,0 +1,59 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'Roboto';
+//@fontName          : 'Open Sans';
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+@googleFontName    : @fontName;
+@importGoogleFonts : true;
+@googleFontSizes   : '300,300i,400,400i,700,700i';
+@googleSubset      : 'cyrillic-ext,latin-ext';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 14px;
+
+/* The size of page text  */
+@fontSize : 14px;
+
+
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+@relativeBorderRadius: @relative4px;
+@absoluteBorderRadius: 0em;
+
+@defaultBorderRadius: @absoluteBorderRadius;
+
+
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : #4a6f94;
+@linkUnderline       : none;
+@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverUnderline  : @linkUnderline;

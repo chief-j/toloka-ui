@@ -1,21 +1,49 @@
 @px_r: 		0.07143rem;
 @px_e: 		0.07143em;
 
+
+body {
+	background-color: #f9f9f9;
+}
 img {
 	vertical-align: middle;
+}
+a {
+	transition: .2s;
 }
 
 .downlaod-head {
 	background-image: url(http://localhost/toloka-ui/images/american-gods-poster-premiere-no-date_hor.jpg);
+	background-image: url(http://img.hurtom.com/i/2017/07/MV5BYzY5ODNkNmQtNDhlZS00ZmRmLWJiZDktMWQwNzg4NjgwODMwXkEyXkFqcGdeQXVyNjc5Mjg0NjU-._V1_SX1777_CR001777734_AL_.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: pos_animation 100s infinite;
 	// margin-bottom: 5rem;
 	.download-inner {
-		background-color: rgba(9, 16, 33, 0.41);
+		background-color: rgba(9, 16, 33, 0.4);
 		// padding-top: 5.714rem;
 		&> .heade {
-			padding-top: 5.714rem;
+			padding-top: 3.714rem;
+		}
+		.other-releases {
+			position: absolute;
+			right: 1rem;
+			text-decoration: none;
+			text-align: right;
+			margin-top: auto;
+			font-size: 1.2em;
+			line-height: 1.4;
+			ul {
+				list-style-type: none;
+				a {
+					color: rgba(255, 255, 255, 0.7);
+					text-shadow: 0.0625rem 0.0625rem 0.1rem rgba(0, 0, 0, 0.4);
+					transition: .3s;
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
 		}
 	}
 	.poster {
@@ -23,7 +51,7 @@ img {
 		.poster-inner {
 			position: absolute;
 			background-color: #fff;
-			box-shadow: 0 0 0.5rem 0.0625rem rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
 			img {
 				width: 100%;
 				padding: 0.1429rem;
@@ -36,9 +64,9 @@ img {
 		.breadcrumb {
 			font-size: 0.8571em;
 			font-weight: bold;
-			text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+			text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.75);
 			a {
-				color: #fff;
+				color: rgba(255, 255, 255, 0.8);
 			}
 			i {
 				color: #bfbfbf;
@@ -47,14 +75,15 @@ img {
 		.post-name {
 			font-size: 1.714em;
 			color: #fff;
-			text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+			text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.4);
+			padding: .5rem 0 1rem;
 		}
 		.bt_attached {
-			font-size: 2.571em;
+			font-size: 2.171em;
 			line-height: 1.4;
 			padding: 1.571em 0;
 			color: #fff;
-			text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+			text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.4);
 			a {
 				color: #fff;
 				cursor: pointer;
@@ -65,7 +94,7 @@ img {
 			a {
 				color: #fff;
 				transition: .3s;
-				text-shadow: 0.0625rem 0.0625rem 0.25rem #000000;
+				text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.4);
 				padding: 0 .3em;
 				&:hover {
 					color: #dfdfdf;
@@ -74,11 +103,11 @@ img {
 		}
 	}
 	.bottom {
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.6);
 		.statistics {
 			.statistic {
 				margin-bottom: 0;
-				text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.29);
+				text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.4);
 				.value {
 					font-size: 2.429em !important;
 				}
@@ -123,17 +152,48 @@ img {
 
 .download-content {
 	margin-top: 3rem;
+	background-color: #fff;
 	img {
 		max-width: 39.29rem;
 	}
 	article {
 		border: @px_e solid rgba(0, 0, 0, 0.26);
 		border-radius: @px_r*3;
-		box-shadow: 0 0 0.5rem 0.0625rem rgba(0, 0, 0, 0.32);
+		box-shadow: 0 0 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
 		padding: 1rem;
+		.postlink {
+			img {
+				display: none;
+			}
+		}
 	}
 }
 
+
+
+.ui {
+	&.accordion {
+		.active {
+			&.content {
+				img {
+					max-width: 50%;
+					padding: @px_r;
+					float: left;
+				}
+				margin-bottom: @px_r*6 !important;
+			}
+		}
+	}
+	&.styled {
+		&.accordion {
+			.title {
+				border-bottom: 1px solid rgba(34,36,38,.15);
+				margin: @px_r*6 0;
+				color: #000;
+			}
+		}
+	}
+}
 
 
 .code {
@@ -148,8 +208,9 @@ img {
 	border-right-width: 1px;
 	border-bottom-width: 1px;
 }
-
-
+.list {
+	display: inline-block;
+}
 
 
 
@@ -159,10 +220,10 @@ img {
 ///----------- АНІМАЦІЇ ---------------//////
 
 @keyframes pos_animation {
-  0%, 100% {
-    background-position-y: 27%;
-  }
-  50% {
-    background-position-y: 70%;
-  }
+	0%, 100% {
+		background-position-y: 27%;
+	}
+	50% {
+		background-position-y: 70%;
+	}
 }
